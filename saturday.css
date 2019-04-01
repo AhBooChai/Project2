@@ -1,0 +1,239 @@
+body {
+	font-family: 'Thasadith', sans-serif;
+  	font-size: 15px;
+  	padding: 10px;
+  	margin: 10px;
+  	display: grid;
+  	grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  	grid-template-areas:
+  	"p h h"
+  	"c f f"
+  	"a f f"
+  	"i f f"
+    	
+}
+
+
+#header {
+	grid-area: h;
+	padding: 10px;
+}
+
+#photo {
+	grid-area: p;
+}
+
+#contact {
+	grid-area: c;
+}
+
+#about {
+	grid-area: a;
+	padding: 10px;
+}
+
+#interest {
+	grid-area: i;
+}
+
+#article {
+	grid-area: f;
+}
+
+/*section & article {
+	padding: 10px;
+	margin: 10px;
+}*/
+
+img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+}
+
+h5 {
+	text-align: center;
+	font-size: 30px;
+	color: #FD4452;
+	margin-bottom: 15px;
+	border: 1px solid black;
+}
+
+p {
+	text-align: justify;
+}
+
+#interest {
+	text-align: center;
+}
+
+#contact, #about, #interest {
+	padding: 10px;
+}
+
+.interest {
+	display: inline-block;
+	margin: 10px;
+	font-size: 25px;
+}
+
+h1 {
+	font-family: 'Parisienne', cursive;
+	text-align: center;
+	font-size: 100px;
+	color: #FD4452;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: 'Thasadith', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bolder;
+	margin-bottom: 45px;
+	margin-top: 10px;
+}
+
+hr {
+	margin-top: -4px;
+	border-color: #FD4452;
+
+}
+
+article {
+	padding: 10px;
+	margin: 10px;
+	display: grid;
+	grid-template: repeat(9, 1fr) / (1fr 2fr);
+	grid-template-areas:
+
+	"t t"
+	"z y"
+	"x w"
+	"v u"
+	"m m"
+	"s r"
+	"q p"
+	"o n"
+	"b b"
+
+}
+
+#top {
+	grid-area: t;
+}
+
+#middle {
+	grid-area: m;
+}
+
+#bottom {
+	grid-area: b;
+}
+
+#one {
+	grid-area: z;
+
+}
+
+#two {
+	grid-area: y;
+
+}
+
+#three {
+	grid-area: x;
+
+}
+
+#four {
+	grid-area: w;
+
+}
+
+#five {
+	grid-area: v;
+
+}
+
+#six {
+	grid-area: u;
+
+}
+
+#seven {
+	grid-area: t;
+
+}
+
+#eight {
+	grid-area: s;
+
+}
+
+#nine {
+	grid-area: r;
+
+}
+
+#ten {
+	grid-area: q;
+
+}
+
+#eleven {
+	grid-area: p;
+
+}
+
+#twelve {
+	grid-area: o;
+
+}
+
+#thirteen {
+	grid-area: n;
+
+}
+
+.indent {
+	padding-left: 26px;
+}
+
+.circle {
+	margin: 5px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+hr + p {
+	padding-left: 10px;
+}
+
+p i {
+	margin-right: 20px;
+	font-size: 20px;
+}
+
+
+
+/* @media all and (max-width: 480px) {
+	body {
+		display: grid;
+		grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+		grid-template-areas:
+		"h h"
+		"p c"
+		"a i"
+		"a a"
+		"a a"
+		
+	} */
+
+
