@@ -1,0 +1,92 @@
+body {
+	font: 15px/1.5 'Thasadith' sans-serif;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template: repeat(4, auto) / repeat(3, 1fr);
+	grid-template-areas:
+	"p h h"
+	"c m m"
+	"a m m"
+	"i m m"
+}
+
+/* main layout */
+i {
+	font-size: 1em;
+	color: #bd8c7d;
+}
+
+header {
+	grid-area: h;
+}
+
+#photo {
+	grid-area: p;
+}
+
+#contact {
+	grid-area: c;
+}
+
+#about {
+	grid-area: a;
+}
+
+#interest {
+	grid-area: i;
+
+}
+
+article {
+	grid-area: m;
+}
+
+/* left column */
+
+section {
+	background-color: #49494b;
+	color: white;
+}
+
+img {
+	display: block;
+	justify-content: center;
+	width: 13em;
+	height: 13em;
+	border-radius: 50%;
+	padding: 1em;
+
+	/* margin-left: auto;
+	margin-right: auto; */
+	
+}
+
+h5 {
+	text-align: center;
+	background-color: #bd8c7d;
+	color: #ffffff ;
+	font-size: 20px;
+}
+
+.container p {
+	margin-left: 20px;
+}
+
+#interest .container {
+	text-align: center;
+}
+
+.box {
+	display: inline-block;
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+/* right column */
+
+header, article, hr {
+	margin: 10px;
+}
+
+
