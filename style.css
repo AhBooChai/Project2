@@ -1,111 +1,189 @@
 body {
-	font-family: 'Thasadith', sans-serif;
-	font-size: 15px;
-}
-
-.container {
+	font: 16px/1.5 'Thasadith';
+	padding: 0;
+	margin: 0;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template: repeat(4, auto) / repeat(3, 1fr);
+	grid-template-areas:
+	"p h h"
+	"c m m"
+	"a m m"
+	"i m m"
 }
 
-.left {
-	padding: 20px;
-	background-color: #4b6777;
-	color: #ce9e62;
+/* main layout */
+i {
+	font-size: 1em;
+	color: #d1bfa7;
+	padding-right: 5px;
+}
+
+header {
+	grid-area: h;
+}
+
+#photo {
+	grid-area: p;
+}
+
+#contact {
+	grid-area: c;
+}
+
+#about {
+	grid-area: a;
+}
+
+#interest {
+	grid-area: i;
 
 }
+
+article {
+	grid-area: m;
+}
+
+/* left column */
+
+section {
+	background-color: #49494b;
+	color: white;
+}
+
 img {
-	width: 180px;
-	height:180px;
-	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
 	display: block;
-	padding: 25px;
+	width: 13em;
+	height: 13em;
+	border-radius: 50%;
+	margin: 0 auto;
+	padding-top: 1.5em;
 }
 
-h5 {
+section h5 {
 	text-align: center;
-	font-size: 30px;
-	background-color: #c1432e;
-	color: #C0B283;
-	margin-bottom: 15px;
-	border: 1px solid #ce9e62; 
+	background-color: #bd8c7d;
+	color: #ffffff ;
+	font-size: 20px;
+	padding: 5px;
 }
 
-p {
+.container p {
+	margin: 20px;
+}
+
+#introductory {
 	text-align: justify;
 }
-
-.interest {
+#interest .container {
 	text-align: center;
 }
 
-#book, #running, #globe {
+.box {
 	display: inline-block;
+	margin: 10px;
+	font-size: 1.5em;
 }
 
+/* right column */
 
-.right {
-	background-color: #2c2c2c;
-	color: #ce9e62;
-	padding: 15px;
-}
+header, article, hr {
+	margin: 1em;
+} 
 
 h1 {
-	font-family: 'Parisienne', cursive;
-	text-align: center;
-	font-size: 100px;
-	color: red;
-	margin-bottom: 10px;
+	font-family: 'Parisienne';
+	font-size: 5em;
+	margin-bottom: -10px;
+	color: #8e8e90;
 }
 
 h3 {
-	font-family: 'Thasadith', sans-serif;
-	text-align: center;
-	font-size: 40px;
 	font-weight: bolder;
-	margin-bottom: 45px;
-	margin-top: 10px;
+	color: #49494b;
 }
 
-hr {
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: -4px;
-	border-color: #C0B283;
+#top, #middle, #bottom {
+	margin-left: 1em;
+}
+h3 {
+	font-size: 20px;
 
 }
 
- i {
- 	margin: 10px;
- 	color: #C0B283;
+article {
+	color: #49494b;
+	}
 
- }
-
-.education {
+.edu {
 	display: grid;
-	grid-template-columns: 200px 2fr;
-	grid-row-gap: 15px;
+	grid-template: repeat(3 1fr) / repeat(1fr 2fr);
+	grid-template-areas: 
+	"a b b"
+	"c d d"
+	"e f f"
 }
 
-.work {
+#one {
+	grid-area: a;
+}
+
+#two {
+	grid-area: b;
+}
+
+#three {
+	grid-area: c;
+}
+
+#four {
+	grid-area: d;
+}
+
+#five {
+	grid-area: e;
+}
+
+#six {
+	grid-area: f;
+}
+
+.exp {
 	display: grid;
-	grid-template-columns: 200px 2fr;
-	grid-row-gap: 15px;
-
+	grid-template: repeat(3 1fr) / repeat(1fr 2fr);
+	grid-template-areas:
+	"g h h"
+	"i j j"
+	"k l l"
 }
 
+#seven {
+	grid-area: g;
+}
 
- .right > p {
- 	margin: 15px;
- }
+#eight {
+	grid-area: h;
+}
 
- .top, .middle, .bottom {
- 	font-size: 25px;
- 	font-weight: bold;
- }
+#nine {
+	grid-area: i;
+}
 
+#ten {
+	grid-area: j;
+}
 
+#eleven {
+	grid-area: k;
+}
 
+#twelve {
+	grid-area: l;
+}
 
+footer {
+	margin-left: 0.1em;
+}
+
+@media screen and (max-width: 768px) {
+	
+}
