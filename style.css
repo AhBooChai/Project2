@@ -150,7 +150,7 @@ article {
 }
 
 #one {
-	grid-area: a;	
+	grid-area: a;
 }
 
 #two {
@@ -212,19 +212,20 @@ footer {
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
 	body {
-		width: 100%;
+		width: 768px;
 		margin: 0px auto;
 	}
 	section {
-		width: 220px;
+		width: 225px;
 		padding-right: 5px;
 	}
 
 	header, article, footer {
-		width: 540px;
-		/*padding: 5px;*/
+		width: 538px;
+		margin-left: -5px;
+		
 	}
 	
 	img {
@@ -232,12 +233,18 @@ footer {
 		height: auto;
 	}
 
+	section h5 {
+		margin-top: -0px;
+		width 100%;
+	}
+
 }
 
-@media (max-width: 479px) {
+@media (max-width: 320px) {
 	body {
-		width: 100%;
-		/*margin: 0px auto;*/
+		width: 320px;
+		margin: 0px auto;
+		padding: 0px;
 		display: grid;
 		grid-template: repeat(4, auto);
 		grid-template-areas:
@@ -251,19 +258,34 @@ footer {
 		"m"
 	}
 
-	section {
-		width: 100%;
+	header, section, footer {
+		width: 320px;
 		margin: 0px auto;
 	}
 
-	header, article, footer {
-		width: 100%;
+	article {
+		width: 300px;
 		margin: 0px auto;
 	}
 	
 	img {
-		width: 90%%;
+		width: 100%%;
 		height: auto;
 	}
 
+	header h1, header h3 {
+		text-align: center;
+	}
+
+	header {
+		background-color: #49494b;
+	}
+
+	header h3 {
+		color: #d1bfa7;
+	}
+
+	section h5 {
+		margin-top: -2px;
+	}
 }
