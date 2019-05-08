@@ -1,0 +1,467 @@
+body {
+	font: 10px/1.5 arial;
+	color: #49494b;
+	margin: 0px auto;
+	display: grid;
+	grid-template: repeat(4, auto) / 1fr 1fr;
+	grid-template-areas:
+	"h h"
+	"p m"
+	"i c"
+	"a a"
+
+}
+
+header {
+	grid-area: h;
+}
+
+#photo {
+	grid-area: p;
+}
+
+#contact {
+	grid-area: c;
+}
+
+#about {
+	grid-area: m;
+}
+
+#interest {
+	grid-area: i;
+}
+
+article {
+	grid-area: a;
+}
+
+/* Header styling */
+header {
+	text-align: center;
+	padding: 10px 10px;
+	background-color: #49494b;
+	border: 1px solid #d1bfa7;
+
+
+}
+
+header h1 {
+	font-family: 'Parisienne';
+	font-size: 30px;
+	font-weight: bold;
+	color: #d1bfa7;
+	margin-bottom: -15px;
+}
+
+header h3 {
+	color: #d1bfa7;
+
+}
+
+section {
+	background-color: #49494b;
+	border: 1px solid #d1bfa7;
+}
+
+section h5 {
+	text-align: center;
+	background-color: #bd8c7d;
+	color: #ffffff ;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: -1px;
+	border: 1px solid #d1bfa7;
+
+}
+
+#container-header {
+	display: block;
+}
+
+/* Image styling */
+#photo {
+	background-color: #49494b;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+	margin: 0px auto;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+/* About section styling */
+
+#about {
+	text-align: justify;
+	padding-left: 0px 5px;
+	color: white;
+}
+
+/* Interest section styling */
+
+#interest .container {
+	text-align: center;
+	
+}
+
+.box {
+	display: inline-block;
+	margin: 5px;
+	font-size: 20px;
+
+}
+
+/* Contact section styling */
+
+#contact .container {
+	text-align: left;
+	font-size: 10px;
+	color: white;
+}
+
+.wrapper {
+	margin: 5px;
+}
+
+article {
+	padding: 10px;
+}
+
+.indent {
+	display: table;
+}
+
+.indent .icon, .indent p{
+	display:table-cell;
+}
+
+i {
+	color: #d1bfa7;
+}
+
+hr {
+	color: #d1bfa7;
+	margin-top: -10px;
+}
+
+article i {
+	padding-right: 2px;
+}
+
+@media (min-width: 768px) {
+	body {
+		width: 768px;
+		margin: 0px auto;
+		font: 16px/1.5 arial;
+		padding: 0px;
+		display: grid;
+		grid-template: repeat(4, auto) / 1fr 2fr;
+		grid-template-areas: 
+		"p h h"
+		"c a a"
+		"m a a"
+		"i a a"
+	}
+
+	header {
+		grid-area: h;
+		background-color: white;
+		border: none;
+	}
+
+	header h1 {
+		font-family: 'Parisienne';
+		font-size: 5em;
+		margin-bottom: -10px;
+		color: #d1bfa7;
+		}
+
+	header h3 {
+		font-weight: bolder;
+	}
+
+	#photo {
+		grid-area: p;
+	}
+
+	#contact {
+		grid-area: c;
+	}
+
+	#about {
+		grid-area: m;
+	}
+
+	#interest {
+		grid-area: i;
+	}
+
+	img {
+		display: flex;
+		width: 13em;
+		height: 13em;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+		/*margin: 0px auto;
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		margin-top: 30px;*/
+	}
+
+	section p, section h5 {
+		font-size: 14px;
+		padding: 0 5px;
+	}
+
+	article {
+		grid-area: a;
+		display: grid;
+	}
+
+	.study {
+		display: grid;
+		grid-template: repeat(3 1fr) / 1fr 2fr;
+		grid-gap: 10px;
+		grid-template-areas:
+		"a b b"
+		"c d d"
+		"e f f"
+	}
+
+	#one {
+		grid-area: a;
+		width: 125px;
+	}
+
+	#two {
+		grid-area: b;
+		margin-top: -15px;
+		width: 335px;
+
+	}
+
+	#three {
+		grid-area: c;
+		width: 125px;
+	}
+
+	#four {
+		grid-area: d;
+		margin-top: -15px;
+		width: 335px;
+	}
+
+	#five {
+		grid-area: e;
+		width: 125px;
+	}
+
+	#six {
+		grid-area: f;
+		margin-top: -15px;
+		width: 335px;
+	}
+
+	.work {
+		display: grid;
+		grid-template: repeat(3 1fr) / 1fr 2fr;
+		grid-gap: 15px;
+		grid-template-areas:
+		"g h"
+		"i j"
+		"k l"
+	}
+
+	#seven {
+		grid-area: g;
+		width: 125px;
+	}
+
+	#eight {
+		grid-area: h;
+		margin-top: -15px;
+		width: 335px;
+	}
+
+	#nine {
+		grid-area: i;
+		width: 125px;
+	}
+
+	#ten {
+		grid-area: j;
+		margin-top: -15px;
+		width: 335px;
+	}
+
+	#eleven {
+		grid-area: k;
+		width: 125px;
+	}
+
+	#twelve {
+		grid-area: l;
+		margin-top: -15px;
+		width: 335px;
+	}
+
+}
+
+@media (min-width: 1100px) {
+	body {
+		width: 1100px;
+		margin: 0px auto;
+		font: 16px/1.5 arial;
+		padding: 0px;
+		display: grid;
+		grid-template: repeat(4, auto) / 1fr 2fr;
+		grid-template-areas: 
+		"p h h"
+		"c a a"
+		"m a a"
+		"i a a"
+	}
+
+	header {
+		grid-area: h;
+		background-color: white;
+		border: none;
+	}
+
+	header h1 {
+		font-family: 'Parisienne';
+		font-size: 5em;
+		margin-bottom: -10px;
+		color: #d1bfa7;
+		}
+
+	header h3 {
+		font-weight: bolder;
+	}
+
+	#photo {
+		grid-area: p;
+
+	}
+
+	img {
+		display: block;
+		width: 13em;
+		height: 13em;
+		border-radius: 50%;
+		margin: 0px auto;
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+		margin-top: 30px;
+	}
+
+	#contact {
+		grid-area: c;
+	}
+
+	#about {
+		grid-area: m;
+	}
+
+	#interest {
+		grid-area: i;
+	}
+
+	article {
+		grid-area: a;
+		display: grid;
+	}
+
+	.study {
+		display: grid;
+		grid-template: repeat(3 1fr) / 1fr 2fr;
+		grid-gap: 10px;
+		grid-template-areas:
+		"a b b"
+		"c d d"
+		"e f f"
+	}
+
+	#one {
+		grid-area: a;
+		width: 200px;
+	}
+
+	#two {
+		grid-area: b;
+		margin-top: -15px;
+		width: 500px;
+	}
+
+	#three {
+		grid-area: c;
+		width: 200px;
+	}
+
+	#four {
+		grid-area: d;
+		margin-top: -15px;
+		width: 500px;
+	}
+
+	#five {
+		grid-area: e;
+		width: 200px;
+	}
+
+	#six {
+		grid-area: f;
+		margin-top: -15px;
+		width: 500px;
+	}
+
+	.work {
+		display: grid;
+		grid-template: repeat(3 1fr) / 1fr 2fr;
+		grid-gap: 15px;
+		grid-template-areas:
+		"g h"
+		"i j"
+		"k l"
+	}
+
+	#seven {
+		grid-area: g;
+		width: 200px;
+	}
+
+	#eight {
+		grid-area: h;
+		margin-top: -15px;
+		width: 500px;
+	}
+
+	#nine {
+		grid-area: i;
+		width: 200px;
+	}
+
+	#ten {
+		grid-area: j;
+		margin-top: -15px;
+		width: 500px;
+	}
+
+	#eleven {
+		grid-area: k;
+		width: 200px;
+	}
+
+	#twelve {
+		grid-area: l;
+		margin-top: -15px;
+		width: 500px;
+	}
